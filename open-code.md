@@ -1,61 +1,120 @@
-# Open code - script
+# Open code - script 
 
 ###### tags: `MRC` `UKRN` `open code` `Primers` `animation script`
 
 ## Intro 
-Many researchers use software in their work.
-When this software is shared freely and openly, people use, check, and contribute to improving it.
-Open code is software that has an open license, allowing people to inspect the code behind it. 
-Many open licenses allow the code to be modified and shared, too.
+Many researchers automate data processing tasks by developing code. 
+A key part of the process of publishing research results is to make this code available for scrutiny. 
+Only in exceptional circumstances is it not a good idea not to make the results and the code openly available.
+
+Data processing code is one type of code that researchers develop, others include: schemes for representing and marking up data, communication protocols, codes of conduct and instructions.
+
+Open code is code that has an open licence, allowing anyone to inspect it. Usually, code that is regarded as open also allows others to use it for free. 
+It is this definition of open code that we will go with. 
+The most open code also does not have any restrictions on adapting, re-distributing, and re-licencing it.
+
+Open source software and openly developed code are fundamental to scientific research.
+
+Some researchers not only develop data processing code that runs on software platforms, they also help engineer the platforms, software development environments, computer programming languages and operating systems.
+
+Sustaining the development of code that is open and free to use is challenging as the costs of doing this are considerable. 
+Contributing to code development to keep things open and free is something that is important. 
+What is key to all this are communities of users and developers and those that provide resources and labour.
+
+Developing open code is key to research and a better future for all.
+
 
 ## Why
-Researchers often use software to collect raw data, and to turn raw data into interpretable results.
-Although researchers try to describe this process carefully when they publish a study, there is never room to describe everything exactly.
-By publishing software as open code, researchers can show exactly how their raw data lead to the results they report.
-Other researchers can then check to make sure there aren't errors in the code which affect the results, and check that the results reported in the paper match the output from the code.
+In general, scientific results should be reproducible. 
+Versioning code and making it openly available improves the chances that others can reproduce the results.
 
-There are other advantages to publishing open code, too: the publication acts as a backup so code doesn't get lost when moving labs; and it allows communities and standards to form which help improve the software.
-Many important pieces of software used by researchers every day are built by communities contributing to open code, including the Firefox web browser and the Python and R programming languages. 
-> It would be good to have some bio/medsci-specific examples here. There will be some major workflow components that are FOSS [name=Matt Jaquiery]
+Openness allows for greater scrutiny and can help manifest confidence in reported findings. 
+Others can re-use open code in experimental ways and this can lead to the publication of new findings. 
+These things make your work more relevant and impactful.
+
+There are other advantages to publishing code openly; the publication acts as a backup - so code is less likely to get lost, and it allows communities and standards to form sometimes not only improving the code, but code development tools as well. 
+There is a feedback loop of having better tools and code as this helps evolve the research field and discipline.
+
+Important open code used by researchers every day is often developed by communities of users and developers including individuals that are not directly involved in academic research. 
+Many collaborative projects developing open code are the combination of the efforts of diverse international groups. 
+Engaging with communities of code developers and users can have many benefits. 
+The engagement can be enlightening: You might learn better ways; meet interesting people; and, become more aware of technological developments that might radically change your research field. 
+It could help you envisage a major research project and lead to the development of research consortium and proposals that might help resource and advance things to a whole new level.
+
+The possibilities are as exciting as they are endless!
+
 
 ## How
-There are two steps researchers need to take to make their code open and accessible.
-The first is to choose a license which tells people what they can and can't do with your code. 
-Common open code licenses include the MIT license, which allows people to do more or less anything with your code, and the GNU General Public License v3 which allows people to do more or less anything as long as any software which uses your code is released under the GNU GPL.
-For documentation, data, materials and procedures, and code that doesn't need to be compiled, like analysis scripts, the Creative Commons family of licenses offer an easy-to-understand range of permissions. 
-You can find more help on licensing at ChooseALicense.com.
-You can only apply a license to code that you own, so you need to check with your employer whether the code you write is yours or theirs.
-If it belongs to them, you must ask their permission before you release the code under a license.
+There are two steps researchers need to take to make code open and accessible.
 
-The second step is to put your code somewhere where other researchers can find it.
-Many researchers use version control platforms like GitHub.com to share code.
-These platforms make it possible to find code, and also help to organise collaborations by allowing people to work on individual copies of the code and send patches to one another.
+The first is to choose an open licence that outlines how others are permitted to use the code and that protects you and your organisation by limiting your liabilities.
+
+BSD and MIT licences allow others to do more-or-less anything with the code. Other licenses restrict redistribution or relicensing or do not permit commercial use.
+
+Creative Commons licences offer an easy-to-understand range of permissions and can be applied to documentation, data, materials and procedures, and code that is are not data processing scripts or software. 
+CC Zero is the most liberal of these. 
+A perhaps more commonly used variant is CCBy which obliges users to attribute/acknowledge use. 
+Again there are non-commercial and non-redistributive variants.
+
+You can find more help on licensing at ChooseALicense.com.
+
+You should only apply a license to code that you own, so you should check with your employer about code ownership and licensing.
+
+The second step in making code open is to put it somewhere where others can find it.
+
+Many researchers use platforms like GitHub to share and develop code.
+These platforms help identify issues and allow others to do this too and suggest fixes and engage in a version controlled development of the code.
+
+Making code openly available allows it to be cited and referred to from other publications. 
+To help with this, always version code and use a persistent identifier for each version so that others can locate it.
 
 ## Worries
-Many researchers worry about sharing their code. 
-They are concerned that other people will find mistakes in their code, or that their code is very messy and difficult to follow.
-These worries are understandable, because it's scary to think that other people can look over your work in such detail, but researchers should share their code anyway.
+Some researchers worry about sharing code.
+They are concerned that other people will find mistakes in it, or criticise it in ways that are professionally damaging.
+These worries are understandable, especially if the code is being used in ways that effect a lot of peoples lives.
+But most code isn't that influential and making it open early on stores up fewer problems for the future.
 
-There are almost always mistakes in code, and finding those mistakes makes the code better. 
-When those mistakes affect results, it's even _more_ important to find them, because otherwise we continue to believe things that aren't true. 
-It is difficult to accept when we find results are caused by mistakes, but it does not harm the careers of scientists who can accept these things when they happen.
+Some are also not inclined to share. 
+Academic research can be very competitive and some fear losing an advantage by making the tools they painstakingly developed available to others that may then scoop a bigger prise by using the code.
+The fact is though, that if someone else uses your code to win a Nobel Prize or publish a very influential result, this is done on the back of your work, so you should just be happy with that as a lot of credit for their success is down to you.
 
-Most researchers are not also professional software developers, and so most researchers write code which is messy, poorly organised, and fragile.
-There are many benefits of writing good code: it is easier to understand and maintain, less likely to contain mistakes, and easier for others to build on and adapt.
-Researchers who can take the time to improve their coding skills should do so.
-But researchers should share their code whether or not it is clean and efficient.
-Because messy code is difficult to understand, it is even more important to allow as many people as possible to inspect and run the code so that they can find and help fix mistakes.
+A lot of code developed by researchers, especially software, starts off messy, poorly documented and tested and difficult to follow. 
+Or the researcher now developing the code was not the original developer and the original developer had not documented or tested things well. 
+Ideally the development of code goes hand in hand with the development of documentation and tests. 
+But don't be so concerned about documentation being imperfect or there being a lack of tests that you do not make the code open. 
+It may be that once the code is open, that others come along to help write the tests and documentation.
+
+Some researchers work on proprietary code bases controlled by senior team members or other organisations. 
+If things have worked well this way for them for years, it can be hard to convince them of the growing need to open up the code and open up the code development process. 
+The sooner they realise they should, the better. 
+Maybe this resource will help you make the argument.
+
 
 ## Benefits
-Sharing code also has benefits for individual researchers sharing the code because it can be cited as a research output. 
-For example, Zenodo.org integrates with GitHub.com to provide Digital Object Identifiers (or 'DOI's) for open code.
-> This could be wrapped into the 'how' bit about GitHub? [name=Matt Jaquiery]
+Sharing code has benefits for individual researchers and research groups. Open code itself is a citeable research output that could be highly valued in assessment exercises. 
+
+Sharing can lead to collaboration and new exciting projects with others.
+
+You have a lot more to gain by sharing code than by not and the sooner you start, the better as realising the benefits can take a while!
+
 
 ## Conclusion
-Sharing code openly helps to make the software that supports our research better. 
-It allows people to work together to ensure that code does what it is supposed to.
-It allows people to work together to make software that is more reliable, easier to access, and easier to use.
-It allows people to build on each other's work to do things no one could do alone - it is the scientific approach to knowledge applied to code.
+Being open and transparent about how things work and how things are done is vital for science.
+
+Descriptions of what codes do are insufficient for us to be certain about what they do.
+
+Open code is key to making scientific results easily reproducible.
+
+Making code open and developing code in an open way are core activities that many researchers should enagage in.
+
+Not all researchers want to engineer software, but it is becoming increasingly clear that many more of us need to direct our efforts this way.
+
+Nearly all codes used in academic research should be licenced and openly available.
+
+Published research findings based on code that is not open are a major concern.
+
+Be community spirited and contribute to the development of open code and help put this activity on a sustainable footing.
+
 
 ---
 
